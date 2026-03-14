@@ -44,7 +44,7 @@ export default function Dashboard({ onResult, isProcessing, setProcessing }) {
       // We will mock the backend response here if the fetch fails so UI can be tested
       let data;
       try {
-         const res = await fetch('http://localhost:8000/analyze', {
+         const res = await fetch('https://trisense-lsom.onrender.com/analyze', {
             method: 'POST',
             body: formData,
          });
